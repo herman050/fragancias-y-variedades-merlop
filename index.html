@@ -501,6 +501,50 @@
     margin-bottom: 15px; /* Aumentamos el margen inferior para separar más el título */
 }
 
+.sold-overlay {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    border-radius: 5px;
+}
+.box {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Ajusta el tamaño según lo necesites */
+    text-align: center;
+}
+
+.sold-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.7); /* Fondo rojo con transparencia */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: visible;
+    z-index: 1; /* Asegura que esté sobre la imagen */
+}
+
+.product-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    display: block;
+    z-index: 0; /* La imagen está debajo del texto */
+}
+
+h3, p {
+    z-index: 2; /* El texto del producto estará sobre la imagen si no tiene el overlay */
+}
+
+
+
     </style>
 </head>
 <body>
@@ -930,6 +974,7 @@
                </p>
 </div>
 <div class="box">
+    <div class="sold-overlay">VENDIDO</div>
     <img src="imagenes productos/king niño.png" alt="Producto 1" class="product-img">
     <h3>Conjunto king niño</h3>
     <p>Talla 3-6 Meses</p>
@@ -940,6 +985,7 @@
        </p>
 </div>
 <div class="box">
+    <div class="sold-overlay">VENDIDO</div>
     <img src="imagenes productos/king capota.png" alt="Producto 1" class="product-img">
     <h3>Conjunto king capota niño</h3>
     <p>Talla 0-4 Meses</p>
@@ -968,8 +1014,99 @@
     <p class="more-info">
        <a href="#">Más información</a>
        </p>
+      
 </div>
- 
+
+<div class="box">
+    <img src="imagenes productos/reloj girasol.png" alt="Producto 1" class="product-img">
+    <h3>Reloj Girasol</h3>
+    <p>Tu niña lo disfrutara</p>
+    <p class="price">$20.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20girasol" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/reloj unicornio.png" alt="Producto 1" class="product-img">
+    <h3>Reloj unicornio</h3>
+    <p>colorido y hermoso</p>
+    <p class="price">$20.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20unicornio" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/reloj carrito.png" alt="Producto 1" class="product-img">
+    <h3>Reloj carrito niño</h3>
+    <p>Dando la hora con diversion</p>
+    <p class="price">$20.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20carrito" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/reloj caballero.png" alt="Producto 1" class="product-img">
+    <h3>Reloj para caballero</h3>
+    <p>Lusca elegante</p>
+    <p class="price">$25.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20caballero" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/reloj para dama.png" alt="Producto 1" class="product-img">
+    <h3>Reloj para dama</h3>
+    <p>para la mas especial</p>
+    <p class="price">$22.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20dama" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/baberos.png" alt="Producto 1" class="product-img">
+    <h3>BABEROS</h3>
+    <p>A tu bebe le gustara</p>
+    <p class="price">$7.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20los%2baberos" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/cepillo kit jirafa.png" alt="Producto 1" class="product-img">
+    <h3>Cepillo kit Jirafa</h3>
+    <p>Con Estilo</p>
+    <p class="price">$16.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2cepillo%20kit%20jirafa" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+<div class="box">
+    <img src="imagenes productos/reloj deportivo.png" alt="Producto 1" class="product-img">
+    <h3>Reloj Deportivo</h3>
+    <p>Con Estilo</p>
+    <p class="price">$22.000</p> <!-- Precio arriba del botón -->
+    <a class="add-to-cart-btn" href="https://wa.me/573156811123?text=Quiero%20mas%20Informacion%20Sobre%20el%2reloj%20deportivo" target="_blank">Añadir</a>
+    <p class="more-info">
+       <a href="#">Más información</a>
+       </p>
+      
+</div>
+
+
 
     </section>
     <div class="contact-box">
@@ -1061,9 +1198,7 @@
             }
         });
     });
-</script>
-
-
+ </script>
 
 </body>
 </html>
